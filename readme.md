@@ -104,21 +104,24 @@ Ahora, puedes realizar modificaciones en los archivos clonados. Recuerda agradec
    git add .
    ```
    
-   ![Alt text](imagenes/gitadd.png)
+![alt text](img/git_add.png)
 
-   Como dato adicional, dependiendo de cuando hiciste el add se mostrará el estado de los archivos en el lado izquierdo, poniendo el cursor sobre el te mostrará el estado actual.
+   Como dato adicional, dependiendo de cuando hiciste el add se mostrará el estado de los archivos en el lado izquierdo, poniendo el cursor sobre el te mostrará el estado actual. 
    
-   ![Alt text](imagenes/estado.png)
+ ![alt text](img/estado_archivos.png)
+
 7. **Realizar un Commit:**
    - Crea un nuevo commit con un mensaje descriptivo.
    ```bash
-   git commit -m "Agregué los datos de los parques"
+   git commit -m "Agregué los casos de uso del 20 al 40"
    ```
 8. **Subir Cambios al Repositorio Remoto:**
    - Sube tu rama al repositorio remoto:
    ```bash
    git push origin nombre-de-la-rama
    ```
+
+   ![alt text](commit.png)
    Esto subirá los cambios al repositorio en GitHub.
 
 ## Crear el Pull Request en GitHub
