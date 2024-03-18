@@ -1,4 +1,4 @@
-# sixflags
+# Principios de Diseño de Sofware en CitiBanamex. 
 Análisis del Principios de Diseño de Sofware en CitiBanamex. 
 
 # ¿Cómo usar Git con GitHub?
@@ -34,7 +34,7 @@ git config user.email
 Antes de clonar un repositorio, asegúrate de estar en el directorio deseado en tu terminal. Luego, puedes clonar un repositorio desde GitHub con el siguiente comando:
 
 ```bash
-git clone https://github.com/MrSheldonT/sixflags.git
+git clone https://github.com/MrSheldonT/PrincipiosDeDisenio.git
 ```
 
 Este comando descargará una copia del repositorio en tu máquina local. Si es necesario, inicia sesión en tu cuenta de GitHub.
@@ -55,11 +55,11 @@ Ahora, puedes realizar modificaciones en los archivos clonados. Recuerda agradec
 
 - **`git commit --amend`** - Modifica el commit más reciente, permitiendo cambiar el mensaje o agregar más cambios.
 
-- **`git checkout -b rama-parque`** - Crea y cambia a una nueva rama llamada "rama-parque".
+- **`git checkout -b rama-banco`** - Crea y cambia a una nueva rama llamada "rama-banco".
 
 - **`git checkout master`** - Cambia a la rama "master".
 
-- **`git branch -d rama-tiendas`** - Elimina la rama "rama-tiendas".
+- **`git branch -d rama-banco`** - Elimina la rama "rama-banco".
 
 - **`git push`** - Sube los cambios al repositorio remoto.
 
