@@ -121,7 +121,7 @@ Ahora, puedes realizar modificaciones en los archivos clonados. Recuerda agradec
    git push origin nombre-de-la-rama
    ```
 
-   ![alt text](commit.png)
+   ![alt text](img/commit.png)
    Esto subirá los cambios al repositorio en GitHub.
 
 ## Crear el Pull Request en GitHub
