@@ -1,0 +1,59 @@
+Pasos CU 5 Y 13
+
+CU13 - Get insurance
+
+El cliente selecciona "tus ofertas Banamex" desde el frmMainMenu
+frmMainMenu invoca a DisplaySubMenu
+DisplaySubMenu muestra frmTransactionRecord
+DisplaySubMenu muestra frmSubMenu
+El cliente selecciona "más detalles" desde frmSubMenu
+frmSubMenu invoca GetInsurance
+GetInsurance corrobora las condiciones con Account
+GetInsurance muestra frmPromoOffer
+El cliente selecciona "me interasa" en el frmPromoOffer
+GetInsurance registra el alta del seguro en Binnacle y en Account
+GetInsurance muestra frmTransactionDetail
+frmTransactionDetail invoca a PrintReceipt
+PrintReceipt muestra frmPrintReceipt
+PrintReceiptMuestra frmTakeReceipt
+El cliente toma su recibo de ReciptPrinter
+PrintReceipt llama a TakeOutCard
+TakeOutCard muestra frmTakeOutCard
+El cliente toma la card desde CardReader
+TakeOutCard muestra frmFarewell
+
+
+CU05 - Cash Deposit
+
+El cliente selecciona "depósito" desde frmMainMenu
+frmMainMenu invoca a DisplaySubMenu
+DisplaySubMenu muestra frmSubMenu
+El cliente selecciona "depósito con efectivo" desde frmSubMenu
+frmSubMenu invoca a DisplaySubMenu
+DisplaySubMenu muestra un nuevo frmSubMenu
+El cliente selecciona "depósito a cuenta" en frmSubMenu
+frmSubMenu invoca a CashDeposit
+CashDeposit muestra frmDataEntry solicitando el número de sucursal
+El cliente ingresa el número de Branch en frmDataEntry
+CashDeposit muestra frmDataEntry solicitando el número de cuenta
+El cliente ingresa el número de la cuenta en frmDataEntry
+CashDeposit muestra nuevamente frmDataEntry solicitando el monto
+El cliente ingresa el monto a depositar en frmDataEntry
+CashDeposit muestra frmTransactionDetail
+frmTransactionDetail invoca a InsertCash
+InsertCash muestra frmInsertCash
+El cliente ingresa el efectivo en CashSlot
+InsertCash muestra frmCashValidation
+InsertCash muestra frmInsertCashDetail
+frmInsertCash invoca a CashDeposit
+CashDeposit muestra frmTransactionRecord
+CashDeposit registra en Binnacle la operación
+CashDeposit relaciona el monto a Card
+frmTransactionRecord invocaPrintReceipt
+PrintReceipt muestra frmPrintReceipt
+PrintReceiptMuestra frmTakeReceipt
+El cliente toma su recibo de ReciptPrinter
+PrintReceipt llama a TakeOutCard
+TakeOutCard muestra frmTakeOutCard
+El cliente toma la card desde CardReader
+TakeOutCard muestra frmFarewell
