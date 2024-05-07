@@ -13,11 +13,12 @@ GetInsurance muestra frmPromoOffer
 El cliente selecciona "me interasa" en el frmPromoOffer
 GetInsurance registra el alta del seguro en Binnacle y en Account
 GetInsurance muestra frmTransactionDetail
-frmTransactionDetail invoca a PrintReceipt
+GetInsurance invoca a PrintReceipt
 PrintReceipt muestra frmPrintReceipt
 PrintReceiptMuestra frmTakeReceipt
 El cliente toma su recibo de ReciptPrinter
-PrintReceipt llama a TakeOutCard
+PrintReceipt llama a GetInsurance
+GetInsurance invoca a TakeOutCard
 TakeOutCard muestra frmTakeOutCard
 El cliente toma la card desde CardReader
 TakeOutCard muestra frmFarewell
@@ -49,11 +50,12 @@ frmInsertCash invoca a CashDeposit
 CashDeposit muestra frmTransactionRecord
 CashDeposit registra en Binnacle la operación
 CashDeposit relaciona el monto a Card
-frmTransactionRecord invocaPrintReceipt
+CashDeposit invocaPrintReceipt
 PrintReceipt muestra frmPrintReceipt
 PrintReceiptMuestra frmTakeReceipt
 El cliente toma su recibo de ReciptPrinter
-PrintReceipt llama a TakeOutCard
+PrintReceipt llama a CashDeposit
+CashDeposit invoca a TakeOutCard
 TakeOutCard muestra frmTakeOutCard
 El cliente toma la card desde CardReader
 TakeOutCard muestra frmFarewell
